@@ -15,7 +15,11 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- light box -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
-    <title>Django Real State</title>
+    <title>
+        {% block title %}
+            Django Real State
+        {% endblock %}
+    </title>
 </head>
 <body>
 
